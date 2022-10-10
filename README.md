@@ -17,44 +17,51 @@ In this prelab part, you will install and set up a terminal, serial console, and
 ### Part 1 Terminal
 In this part, we choose **Ubuntu** as a reference to show you the process to install a terminal to your PC.
 
-#### Step 1.1 Open the Ubuntu app already existed in my PC
+#### Step 1.1 Open the Ubuntu
 If you don't yet have Ubuntu in your PC, simply open Microsoft Store and search for the latest version. It only takes minutes to finish downloading.
+![alt txt](https://github.com/shux3/ese5190_lab2_setups/blob/main/Image/ubuntu.PNG)
+*Notice that if you have a older version of Ubuntu existed in your PC, you might run into an error: "The attempted operation is not supported for the type of object referenced". In this case, open up the cmd as admin and copy paste the following command:*
 
-*Notice*
- open up the cmd as admin and copy paste the command:
-	       netsh winsock reset. Which may be necessary for every time we open Ubuntu. Another solution would be
-               downloading NoLSP.exe from the same website.
-	
-		Problem solved.
-	
-	Step4: Follow instructions, set up new user as Shu Xu (shux), then create a new '.txt' file named 'test.txt' under
-	       lab2 file. Using the following command:
+```
+	netsh winsock reset
+```
+For the first timers, follow the first time Ubuntu instructions, set up new user name.
 
-		$ cd /mnt/c
-		$ cd Users/Xu199/Desktop/UPenn/2022Fall/ESE5190/Lab2/prelab_setup
-		$ touch test.txt
-		$ ls
-		
-		Successfully created a file named 'test.txt' in prelab folder.
+#### Step 1.2 Create File
+Create a new '.txt' file named 'test.txt' under lab2 file. Using the following command:
 
-	Step5: Print "Hello World!" in 'test.txt' use cat command to print it on terminal:
+```
+	$ cd /mnt/c
+	$ cd Users/your user name/Lab2/prelab_setup
+	$ touch test.txt
+	$ ls
+```
+You should now be able to see your 'test.txt' file listed below.
 
-		$ cat test.txt
-		
-		Successfully printed the contents of the txt file.
+#### Step 1.3 Edit File
+Edit 'test.txt' use cat command:
 
-P2.3 Vim
-	Step1: Run vimtutor by input command:
-		
-		$ vimtutor
-		
-		Start lesson 1, and follow the instructions to go through at least a few slides.
+```
+	$ cat test.txt
+```		
+Print "Hello World!" in your terminal screen. You should be able to see the changes in your 'test.txt' file.
 
-P2.4 Serial Console
-	(The guiding site: https://learn.adafruit.com/welcome-to-circuitpython/advanced-serial-console-on-windows)
-	Step1: Open the device manger. Then plug in board to a USB jack, and confirm that COM3 is being used.
+### Part 2 Text Editor - Vim
+Even though you can acess and edit files directly in terminal, Vim is one better option for this purpose. As Vim is a built-in part of Ubuntu, it is already available from your terminal!
 
-	Step2: Download PuTTY of latest 64 bit version. Open it.
+Run vimtutor by input command:
+```		
+	$ vimtutor
+```		
+Start lesson 1, and follow the instructions to go through at least a few slides. Now you should be able to edit files in a more feasible way(after you get experienced)
+
+### Part 3 Serial Console
+Now we need a tool to be able to display the output. For windows users, open [this site](https://learn.adafruit.com/welcome-to-circuitpython/advanced-serial-console-on-windows) and follow instructions on how to install a serial console.
+
+#### Step 3.1 Find the channel you are using.
+Open the device manger. Then plug in board to a USB jack, you should be able to see a new list named **Port**. Under Port, confirm which COM# are you using. In the following steps, we will use **COM3** as an example.
+
+#### Step 3.2 Download PuTTY of latest 64 bit version. Open it.
 
 	Step3: Under Connection type on the left, choose Serial.
 	       Enter COM3(my board COM channel) under Serial line box.
