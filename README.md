@@ -3,13 +3,21 @@
   
   Email: shux@seas.upenn.edu
   
-  |System     |               Windows 10 Home                   |
-  |-----------|-------------------------------------------------|
-  |System Type|   64-bit operating system, x64-based processor  |
-  |Processor  |Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz 2.40 GHz|
+  |System        |               Windows 10 Home                   |
+  |--------------|-------------------------------------------------|
+  |System Version|			21H2			   |
+  |System Type	 |   64-bit operating system, x64-based processor  |
+  |Processor     |Intel(R) Core(TM) i5-9300H CPU @ 2.40GHz 2.40 GHz|
   
 ## Introduction
-This is a guideline to help readers set up their laptops to be ready for flashing c code to QT PY 2040 board, from zero to the first "hello world" c file. Be aware that the whole set up will take a rather long time to run through. Please be patient not to miss the small notices during the installation process.
+This is a guideline to help readers set up their laptops to be ready for flashing c code to QT PY 2040 board, from zero to the first "hello world" c file. Be aware that the whole set up will take a rather long time to run through. Please be patient not to miss the small notices during the installation process. We will be using the following softweres to complete set ups:
+- [Ubuntu](https://ubuntu.com/download/desktop)
+- [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)					
+- [Arm GNU Toolchain](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
+- [CMake](https://cmake.org/download/)
+- [Build Tools for Visual Studio 2022](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022)
+- [Python 3.10](https://www.python.org/downloads/windows/)
+- [Git](https://git-scm.com/download/win)
 
 ## Prelab: Terminal, Serial Console and Text Editor
 In this prelab part, you will install and set up a terminal, serial console, and text editor for the rest of ESE 5190 course. The goal is to turn your own laptop into a powerful portable development environment that you can use anywhere.
@@ -62,7 +70,7 @@ Now we need a tool to be able to display the output. For windows users, open [th
 Open the device manger. Then plug in board to a USB jack, you should be able to see a new list named **Port**. Under Port, confirm which COM# are you using. In the following steps, we will use **COM3** as an example.
 
 #### Step 3.2 PuTTY
-Download PuTTY of latest 64 bit version. Open it. Under Connection type on the left, choose Serial.Enter COM3(replace with your own COM#) under Serial line box. Set the speed to 115200. You may also use other serila console you preferred.
+Download [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) of latest 64 bit version. Open it. Under Connection type on the left, choose Serial.Enter COM3(replace with your own COM#) under Serial line box. Set the speed to 115200. You may also use other serila console you preferred.
 
 ![alt txt](https://github.com/shux3/ese5190_lab2_setups/blob/main/Image/PuTTY.PNG)
 
