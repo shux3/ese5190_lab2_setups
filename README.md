@@ -62,7 +62,7 @@ Now we need a tool to be able to display the output. For windows users, open [th
 Open the device manger. Then plug in board to a USB jack, you should be able to see a new list named **Port**. Under Port, confirm which COM# are you using. In the following steps, we will use **COM3** as an example.
 
 #### Step 3.2 PuTTY
-Download PuTTY of latest 64 bit version. Open it. Under Connection type on the left, choose Serial.Enter COM3(replace with your own COM#) under Serial line box. Set the speed to 115200.
+Download PuTTY of latest 64 bit version. Open it. Under Connection type on the left, choose Serial.Enter COM3(replace with your own COM#) under Serial line box. Set the speed to 115200. You may also use other serila console you preferred.
 
 ![alt txt](https://github.com/shux3/ese5190_lab2_setups/blob/main/Image/PuTTY.PNG)
 
@@ -81,50 +81,50 @@ Install the following tool chains:
 - [Build Tools for Visual Studio 2022](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022)
 - [Python 3.10](https://www.python.org/downloads/windows/)
 - [Git](https://git-scm.com/download/win)
-![alt txt]()
+
 It is recommended to install them one by one as you go through the following sections:
 #### Step 1.1 [Arm GNU Toolchain](https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads)
-For Arm GNU Toolchain, making sure you choose the right file to download(the file ended with -arm-none-eabi.exe).
+- For Arm GNU Toolchain, making sure you choose the right file to download(the file ended with -arm-none-eabi.exe).
 
 ![alt txt](https://github.com/shux3/ese5190_lab2_setups/blob/main/Image/Arm%20GNU.PNG)
 
-Then click the box "Add pathto environment variable" at the end of installation.
+- Then click the box "Add pathto environment variable" at the end of installation.
 
 ![alt txt](https://github.com/shux3/ese5190_lab2_setups/blob/main/Image/Arm%20GNU_after_install.PNG)
 
 #### Step 1.2 [CMake](https://cmake.org/download/)
-For CMake, choose the right 64bit version for windows
+- For CMake, choose the right 64bit version for windows
 
 ![alt txt](https://github.com/shux3/ese5190_lab2_setups/blob/main/Image/CMake.PNG)
 
-Making sure that you select the add path for all users as shown below:
+- Making sure that you select the add path for all users as shown below:
 
 ![alt txt](https://github.com/shux3/ese5190_lab2_setups/blob/main/Image/CMake_install_option.PNG)
 
 #### Step 1.3 [Build Tools for Visual Studio 2022](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2022)
-For vs studio, download the build tool for Visual Studio 2022.
+- For vs studio, download the build tool for Visual Studio 2022.
 
 ![alt txt](https://github.com/shux3/ese5190_lab2_setups/blob/main/Image/visual_studio.PNG)
 
-Then install the Desktop development with C++ only. Make sure to include a full "windows 10 sdk" package as well.
+- Then install the Desktop development with C++ only. Make sure to include a full "windows 10 sdk" package as well.
 
 ![alt txt](https://github.com/shux3/ese5190_lab2_setups/blob/main/Image/vs_1.PNG)
 
 #### Step 1.4 [Python 3.10](https://www.python.org/downloads/windows/)
-For python 3, you may want to choose the lastest version of 64 bits(3.10.7 by the time this guidline is published). 
+- For python 3, you may want to choose the lastest version of 64 bits(3.10.7 by the time this guidline is published). 
 
 ![alt txt](https://github.com/shux3/ese5190_lab2_setups/blob/main/Image/Python_version.PNG)
 
-Also don't forget to select add python 3.10 to path before installing.
+- Also don't forget to select add python 3.10 to path before installing.
 
 ![alt txt](https://github.com/shux3/ese5190_lab2_setups/blob/main/Image/python.PNG)
 
-Click disable the MAX_PATH length limit at the end of installation.
+- Click disable the MAX_PATH length limit at the end of installation.
 
 ![alt txt](https://github.com/shux3/ese5190_lab2_setups/blob/main/Image/python_end.PNG)
 
 #### Step 1.5 [Git](https://git-scm.com/download/win)
-For Git, choose the 64-bit Git for Windows Setup. Unselect the bottom box "Only show new options" to make sure you don't miss the options.
+- For Git, choose the 64-bit Git for Windows Setup. Unselect the bottom box "Only show new options" to make sure you don't miss the options.
 
 ![alt txt](https://github.com/shux3/ese5190_lab2_setups/blob/main/Image/git.PNG)
 
